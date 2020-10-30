@@ -1,8 +1,19 @@
-for(var i = "stop"; i != naam;){
-var naam = prompt("Wat is de naam?");
-var leeftijd = prompt("Wat is de leeftijd?");
-document.write(naam);
-document.write(" ");
-document.write(leeftijd);
-document.write("<br>");
+var loop = true;
+while(loop == true){
+	var naam = prompt("Wat is de naam?");
+	if (naam == "stop"){
+		loop = false;
+	}
+	var leeftijd = prompt("Wat is de leeftijd?");
+	if(naam == "stop"){
+		loop = false;
+	}
+	if(naam != "stop"){
+		document.write(naam);
+		document.write(" ");
+	}
+	if(naam != "stop"){
+		document.write(leeftijd);
+		document.write("<br>");
+	}
 }
